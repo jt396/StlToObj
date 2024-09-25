@@ -64,7 +64,7 @@ bool Obj::from_stl(const Stl& stl, bc::Obj& out_obj, double tolerance) noexcept 
     }
 
     if (tolerance != 0.0) {
-        std::cout << "Removed " << removed_vertices << " with a tolerance of: " << tolerance << std::endl;
+        std::cout << "Merged " << removed_vertices << " vertices with a tolerance/distance of " << tolerance << std::endl;
     }
 
     return true;
